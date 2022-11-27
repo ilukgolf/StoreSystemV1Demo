@@ -7,7 +7,7 @@ def mainFrame(root):
     
     def generateUI():
         global imgFrame, imgUser
-        imgFrame = tk.PhotoImage(file="assets/pages/page_employee.png")
+        imgFrame = tk.PhotoImage(file="assets/pages/page_employee_add.png")
         imgUser = tk.PhotoImage(file="assets/pages/unknownUser.png")
         frameBG = tk.Label(frame, image=imgFrame)
         frameBG.place(x=0, y=0, width=config.windowsWidth, height=config.windowsHeight)
