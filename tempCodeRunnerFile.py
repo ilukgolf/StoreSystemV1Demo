@@ -1,0 +1,1 @@
+assets/pages/page_authentication.png
