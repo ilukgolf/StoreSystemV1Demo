@@ -17,13 +17,12 @@ def mainWindow():
     def checkSqlConnection():
         import connectDB
         if connectDB.checkConnection():
-            print("Connected to database")  #! DEBUG
             authenticationFunction()
         else:
             root.destroy()
         
     def authenticationFunction():   # TODO: EDIT TO authentication (now use to generate ui)
-        import authentication as functionFrame
+        import menuEmployee as functionFrame
         frame = functionFrame.mainFrame(root)
         frame.place(x=0, y=0, width=config.windowsWidth, height=config.windowsHeight)
         
