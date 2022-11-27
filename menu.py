@@ -11,20 +11,20 @@ def mainFrame(root):
         frameBG = tk.Label(frame, image=imgFrame)
         frameBG.place(x=0, y=0, width=config.windowsWidth, height=config.windowsHeight)
 
-        btnBack = tk.Button(frame,
-                            text="กลับ",
+        btnQuit = tk.Button(frame,
+                            text="ออก",
                             cursor="hand2",
                             justify="center",
                             relief="raised",
                             border=0,
                             borderwidth=0,
-                            background=config.colorLightGary,
-                            foreground=config.colorBlack,
-                            activebackground=config.colorLime,
+                            background=config.colorRed,
+                            foreground=config.colorWhite,
+                            activebackground=config.colorWhite,
                             activeforeground=config.colorBlack,
-                            font=tkFont.Font(family=config.fontDefault, size=24)
+                            font=tkFont.Font(family=config.fontDefault, size=14)
         )
-        btnBack.place(x=26, y=14, width=66, height=45)
+        btnQuit.place(x=26, y=14, width=66, height=45)
         
         labelForgotEmployee = tk.Label(frame,
                                         text="พนักงาน",
@@ -32,7 +32,7 @@ def mainFrame(root):
                                         anchor="center",
                                         foreground=config.colorYellow,
                                         background=config.colorBackground,
-                                        font=tkFont.Font(family=config.fontDefault, size=16)
+                                        font=tkFont.Font(family=config.fontDefault, size=14)
         )
         labelForgotEmployee.place(x=179, y=26, width=106, height=27)
     
@@ -42,7 +42,7 @@ def mainFrame(root):
                                         anchor="center",
                                         foreground=config.colorYellow,
                                         background=config.colorBackground,
-                                        font=tkFont.Font(family=config.fontDefault, size=16)
+                                        font=tkFont.Font(family=config.fontDefault, size=14)
         )
         labelForgotCustomer.place(x=308, y=26, width=106, height=27)
     
@@ -52,17 +52,17 @@ def mainFrame(root):
                                         anchor="center",
                                         foreground=config.colorYellow,
                                         background=config.colorBackground,
-                                        font=tkFont.Font(family=config.fontDefault, size=16)
+                                        font=tkFont.Font(family=config.fontDefault, size=14)
         )
         labelForgotProduct.place(x=437, y=26, width=106, height=27)
     
         labelForgotAgent = tk.Label(frame,
-                                        text="ตัวแทนจัดจำหน่าย",
+                                        text="ตัวแทน",
                                         cursor="hand2",
                                         anchor="center",
                                         foreground=config.colorYellow,
                                         background=config.colorBackground,
-                                        font=tkFont.Font(family=config.fontDefault, size=16)
+                                        font=tkFont.Font(family=config.fontDefault, size=14)
         )
         labelForgotAgent.place(x=566, y=26, width=106, height=27)
         
@@ -71,7 +71,7 @@ def mainFrame(root):
                                         anchor="center",
                                         foreground=config.colorWhite,
                                         background=config.colorBackground,
-                                        font=tkFont.Font(family=config.fontDefault, size=16)
+                                        font=tkFont.Font(family=config.fontDefault, size=14)
         )
         labelForgotUserAccount.place(x=1094, y=27, width=162, height=21)
         
@@ -94,32 +94,32 @@ def mainFrame(root):
         entryfd.place(x=900, y=108, width=338, height=35)
 
         btnName = tk.Button(frame,
-                            text=" ",
+                            text="ค้นหา",
                             cursor="hand2",
                             justify="center",
                             relief="raised",
                             border=0,
                             borderwidth=0,
-                            background="#2D394E",
+                            background=config.colorDarkBlue,
                             foreground=config.colorWhite,
-                            activebackground=config.colorLime,
-                            activeforeground=config.colorBlack,
-                            font=tkFont.Font(family=config.fontDefault, size=10)
+                            activebackground=config.colorLightBlue,
+                            activeforeground=config.colorWhite,
+                            font=tkFont.Font(family=config.fontDefault, size=13)
         )
         btnName.place(x=1148, y=162, width=90, height=36)
         
         btnName2 = tk.Button(frame,
-                            text=" ",
+                            text="เพิ่ม",
                             cursor="hand2",
                             justify="center",
                             relief="raised",
                             border=0,
                             borderwidth=0,
-                            background="#2D394E",
+                            background=config.colorDarkBlue,
                             foreground=config.colorWhite,
-                            activebackground=config.colorLime,
-                            activeforeground=config.colorBlack,
-                            font=tkFont.Font(family=config.fontDefault, size=10)
+                            activebackground=config.colorLightBlue,
+                            activeforeground=config.colorWhite,
+                            font=tkFont.Font(family=config.fontDefault, size=13)
         )
         btnName2.place(x=1045, y=162, width=90, height=36)
 
