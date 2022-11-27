@@ -6,8 +6,125 @@ def mainFrame(root):
     frame = tk.Frame(root, background=config.colorBackground)
     
     def generateUI():
-        pass #! CODE HERE
+        global imgFrame
+        imgFrame = tk.PhotoImage(file="assets\pages\page_menu.png")
+        frameBG = tk.Label(frame, image=imgFrame)
+        frameBG.place(x=0, y=0, width=config.windowsWidth, height=config.windowsHeight)
+        
+        labelForgotEmployee = tk.Label(frame,
+                                        text="พนักงาน",
+                                        cursor="hand2",
+                                        justify="center",
+                                        foreground="#FFF27E",
+                                        background=config.colorBackground,
+                                        font=tkFont.Font(family=config.fontDefault, size=11)
+        )
+        labelForgotEmployee.place(x=47, y=26, width=120, height=27)
     
+        labelForgotCustomer = tk.Label(frame,
+                                        text="ลูกค้า",
+                                        cursor="hand2",
+                                        justify="center",
+                                        foreground="#FFF27E",
+                                        background=config.colorBackground,
+                                        font=tkFont.Font(family=config.fontDefault, size=11)
+        )
+        labelForgotCustomer.place(x=176, y=26, width=120, height=27)
+    
+        labelForgotProduct = tk.Label(frame,
+                                        text="สินค้า",
+                                        cursor="hand2",
+                                        justify="center",
+                                        foreground="#FFF27E",
+                                        background=config.colorBackground,
+                                        font=tkFont.Font(family=config.fontDefault, size=11)
+        )
+        labelForgotProduct.place(x=305, y=26, width=120, height=27)
+    
+        labelForgotAgent = tk.Label(frame,
+                                        text="ตัวแทนจัดจำหน่าย",
+                                        cursor="hand2",
+                                        justify="center",
+                                        foreground="#FFF27E",
+                                        background=config.colorBackground,
+                                        font=tkFont.Font(family=config.fontDefault, size=11)
+        )
+        labelForgotAgent.place(x=450, y=26, width=120, height=27)
+
+        labelForgotFunctionNameI = tk.Label(frame,
+                                        text="ชื่อฟังชัน",
+                                        cursor="hand2",
+                                        justify="center",
+                                        foreground="#FFF27E",
+                                        background=config.colorBackground,
+                                        font=tkFont.Font(family=config.fontDefault, size=11)
+        )
+        labelForgotFunctionNameI.place(x=603, y=26, width=120, height=27)
+    
+        labelForgotFunctionNameII = tk.Label(frame,
+                                        text="ชื่อฟังชัน",
+                                        cursor="hand2",
+                                        justify="center",
+                                        foreground="#FFF27E",
+                                        background=config.colorBackground,
+                                        font=tkFont.Font(family=config.fontDefault, size=11)
+        )
+        labelForgotFunctionNameII.place(x=732, y=26, width=120, height=27)
+    
+        labelForgotFunctionNameIII = tk.Label(frame,
+                                        text="ชื่อฟังชัน",
+                                        cursor="hand2",
+                                        justify="center",
+                                        foreground="#FFF27E",
+                                        background=config.colorBackground,
+                                        font=tkFont.Font(family=config.fontDefault, size=11)
+        )
+        labelForgotFunctionNameIII.place(x=861, y=26, width=120, height=27)
+        
+        labelForgotUserAccount = tk.Label(frame,
+                                        text="ชื่อบัญชีผู้ใช้งาน",
+                                        cursor="hand2",
+                                        justify="center",
+                                        foreground=config.colorWhite,
+                                        background=config.colorBackground,
+                                        font=tkFont.Font(family=config.fontDefault, size=11)
+        )
+        labelForgotUserAccount.place(x=1125, y=26, width=120, height=27)
+        
+        labelForgotfunctionUsed = tk.Label(frame,
+                                        text="ชื่อฟังชัน\nที่กำลังใช้งาน",
+                                        cursor="hand2",
+                                        justify="center",
+                                        foreground=config.colorBlack,
+                                        background=config.colorLightGary,
+                                        font=tkFont.Font(family=config.fontDefault, size=16)
+        )
+        labelForgotfunctionUsed.place(x=53, y=99, width=209, height=97)
+
+        entryfd = tk.Entry(frame,
+                                justify="center",
+                                relief="raised",
+                                background=config.colorWhite,
+                                foreground=config.colorBlack,
+                                font=tkFont.Font(family=config.fontDefault, size=13)
+        )
+        entryfd.place(x=900, y=108, width=338, height=35)
+
+        btnName = tk.Button(frame,
+                            text="ชื่อปุ่ม",
+                            cursor="hand2",
+                            justify="center",
+                            relief="raised",
+                            border=0,
+                            borderwidth=0,
+                            background="#2D394E",
+                            foreground=config.colorWhite,
+                            activebackground=config.colorLime,
+                            activeforeground=config.colorBlack,
+                            font=tkFont.Font(family=config.fontDefault, size=10)
+        )
+        btnName.place(x=1148, y=154, width=90, height=36)
+
     generateUI()
     return frame
 
