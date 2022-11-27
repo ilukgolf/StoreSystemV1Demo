@@ -15,18 +15,21 @@ def mainWindow():
         return root
     
     def checkSqlConnection():
-        pass
-        # TODO: Check if the connection to the database is working
+        import connectDB
+        if connectDB.checkConnection():
+            print("Connected to database")  #! DEBUG
+            authenticationFunction()
+        else:
+            root.destroy()
         
-    def authenticationFunction():
-        import menu
-        frame = menu.mainFrame(root)
+    def authenticationFunction():   # TODO: EDIT TO authentication (now use to generate ui)
+        import menu as functionFrame
+        frame = functionFrame.mainFrame(root)
         frame.place(x=0, y=0, width=config.windowsWidth, height=config.windowsHeight)
         
     root = generateWindow()
-    # checkSqlConnection()
-    authenticationFunction()
+    checkSqlConnection()
     root.mainloop()
     
 if __name__ == "__main__":
-    mainWindow()    # Run the main window
+    mainWindow()
