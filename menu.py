@@ -12,4 +12,5 @@ def mainFrame(root):
     return frame
 
 if __name__ == "__main__":
-    mainFrame()
+    import main
+    main.mainWindow()
