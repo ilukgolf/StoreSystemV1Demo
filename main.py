@@ -23,13 +23,13 @@ def mainWindow():
             root.destroy()
         
     def authenticationFunction():   # TODO: EDIT TO authentication (now use to generate ui)
-        import menu as functionFrame
+        import authentication as functionFrame
         frame = functionFrame.mainFrame(root)
         frame.place(x=0, y=0, width=config.windowsWidth, height=config.windowsHeight)
         
     root = generateWindow()
-    # checkSqlConnection()
-    authenticationFunction()
+    checkSqlConnection()
+    # authenticationFunction()
     root.mainloop()
     
 if __name__ == "__main__":
