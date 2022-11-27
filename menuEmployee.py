@@ -119,6 +119,59 @@ def mainFrame(root):
         
         labelUserImg = tk.Label(frame, image=imgUser)
         labelUserImg.place(x=902, y=162, width=283, height=326)
+        
+        btnEdit = tk.Button(frame,
+                            text="แก้ไข",
+                            cursor="hand2",
+                            justify="center",
+                            relief="raised",
+                            border=0,
+                            borderwidth=0,
+                            background=config.colorDarkBlue,
+                            foreground=config.colorWhite,
+                            activebackground=config.colorLightBlue,
+                            activeforeground=config.colorWhite,
+                            font=tkFont.Font(family=config.fontDefault, size=14)
+        )
+        btnEdit.place(x=909, y=641, width=120, height=36)
+        
+        btnDelete = tk.Button(frame,
+                            text="ลบ",
+                            cursor="hand2",
+                            justify="center",
+                            relief="raised",
+                            border=0,
+                            borderwidth=0,
+                            background=config.colorRed,
+                            foreground=config.colorWhite,
+                            activebackground=config.colorDarkBlue,
+                            activeforeground=config.colorWhite,
+                            font=tkFont.Font(family=config.fontDefault, size=14)
+        )
+        btnDelete.place(x=1060, y=641, width=120, height=36)
+        
+        labelDepartment = tk.Label(frame,
+                                    text="ทดสอบ",
+                                    anchor="center",
+                                    relief="flat",
+                                    background=config.colorLightGary,
+                                    foreground=config.colorFont,
+                                    font=tkFont.Font(family=config.fontDefault, size=12)
+        )
+        labelDepartment.place(x=902, y=528, width=283, height=29)
+        
+        labelEmployeeID = tk.Label(frame,
+                                    text="ทดสอบ",
+                                    anchor="center",
+                                    relief="flat",
+                                    background=config.colorLightGary,
+                                    foreground=config.colorFont,
+                                    font=tkFont.Font(family=config.fontDefault, size=12)
+        )
+        labelEmployeeID.place(x=902, y=578, width=283, height=29)
+        
+        entryNameTH.configure(text="Jirawat Bunmaraksasakul")
+                            
 
     generateUI()
     return frame
