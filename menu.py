@@ -8,9 +8,8 @@ def mainFrame(root):
     def generateUI():
         pass #! CODE HERE
     
-    
+    generateUI()
     return frame
 
 if __name__ == "__main__":
-    import main
-    main.mainWindow()
+    mainFrame()
