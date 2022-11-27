@@ -55,6 +55,7 @@ def mainFrame(root):
         )
         labelForgotPassword.place(x=519, y=559, width=243, height=23)
 
+    generateUI()
     return frame
 
 if __name__ == "__main__":
