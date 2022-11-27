@@ -23,7 +23,7 @@ def mainWindow():
             root.destroy()
         
     def authenticationFunction():   # TODO: EDIT TO authentication (now use to generate ui)
-        import menuEmployee as functionFrame
+        import menu as functionFrame
         frame = functionFrame.mainFrame(root)
         frame.place(x=0, y=0, width=config.windowsWidth, height=config.windowsHeight)
         
