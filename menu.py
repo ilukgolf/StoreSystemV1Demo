@@ -22,7 +22,8 @@ def mainFrame(root, userInfo):
                             foreground=config.colorWhite,
                             activebackground=config.colorWhite,
                             activeforeground=config.colorBlack,
-                            font=tkFont.Font(family=config.fontDefault, size=14)
+                            font=tkFont.Font(family=config.fontDefault, size=14),
+                            command=lambda: btnQuitClick()
         )
         btnQuit.place(x=26, y=14, width=66, height=45)
         
@@ -67,13 +68,13 @@ def mainFrame(root, userInfo):
         labelForgotAgent.place(x=566, y=26, width=106, height=27)
         
         labelForgotUserAccount = tk.Label(frame,
-                                        text="ชื่อบัญชีผู้ใช้งาน",
+                                        text=userInfo['username'],
                                         anchor="center",
                                         foreground=config.colorWhite,
                                         background=config.colorBackground,
                                         font=tkFont.Font(family=config.fontDefault, size=14)
         )
-        labelForgotUserAccount.place(x=1094, y=27, width=162, height=21)
+        labelForgotUserAccount.place(x=1094, y=27, width=162, height=23)
         
         labelForgotfunctionUsed = tk.Label(frame,
                                         text="ชื่อฟังชัน\nที่กำลังใช้งาน",
@@ -122,7 +123,12 @@ def mainFrame(root, userInfo):
                             font=tkFont.Font(family=config.fontDefault, size=13)
         )
         btnName2.place(x=1045, y=162, width=90, height=36)
-
+        
+    def btnQuitClick():
+        import authentication
+        frame = authentication.mainFrame(root)
+        frame.place(x=0, y=0, width=config.windowsWidth, height=config.windowsHeight)
+        
     generateUI()
     return frame
 
