@@ -27,8 +27,8 @@ def mainWindow():
         frame.place(x=0, y=0, width=config.windowsWidth, height=config.windowsHeight)
         
     root = generateWindow()
-    checkSqlConnection()
-    # authenticationFunction()
+    # checkSqlConnection()
+    authenticationFunction()
     root.mainloop()
     
 if __name__ == "__main__":
