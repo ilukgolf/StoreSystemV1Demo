@@ -19,8 +19,8 @@ def mainWindow():
         # TODO: Check if the connection to the database is working
         
     def authenticationFunction():
-        import authentication
-        frame = authentication.mainFrame(root)
+        import menu
+        frame = menu.mainFrame(root)
         frame.place(x=0, y=0, width=config.windowsWidth, height=config.windowsHeight)
         
     root = generateWindow()
