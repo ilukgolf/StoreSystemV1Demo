@@ -13,6 +13,9 @@ def mainFrame(root):
         frameBG = tk.Label(frame, image=imgFrame)
         frameBG.place(x=0, y=0, width=config.windowsWidth, height=config.windowsHeight)
         
+        username_entry.set("admin")
+        password_entry.set("password")
+        
         entryUsername = tk.Entry(frame,
                                 justify="left",
                                 relief="raised",
