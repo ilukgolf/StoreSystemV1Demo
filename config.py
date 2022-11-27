@@ -11,6 +11,8 @@ colorBlack = "#000000"
 colorLime = "#00FF00"
 colorLightGary = "#F6F8FC"
 colorFont = "#767676"
+colorRed = "#DC3535"
+colorYellow = "#FFF27E"
 
 fontDefault = "kanit"
 
