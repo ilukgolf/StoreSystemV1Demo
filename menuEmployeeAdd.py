@@ -34,7 +34,7 @@ def mainFrame(root):
                                     foreground=config.colorBlack,
                                     font=tkFont.Font(family=config.fontDefault, size=15)
         )
-        entryNameTH.place(x=428, y=121, width=412, height=31)
+        entryNameTH.place(x=413, y=119, width=416, height=35)
 
         entryNameEN = tk.Entry(frame,
                                     justify="left",
@@ -43,7 +43,7 @@ def mainFrame(root):
                                     foreground=config.colorBlack,
                                     font=tkFont.Font(family=config.fontDefault, size=15)
         )
-        entryNameEN.place(x=428, y=174, width=412, height=31)
+        entryNameEN.place(x=413, y=174, width=416, height=35)
 
         entryThaiIdNumber = tk.Entry(frame,
                                     justify="left",
@@ -52,7 +52,7 @@ def mainFrame(root):
                                     foreground=config.colorBlack,
                                     font=tkFont.Font(family=config.fontDefault, size=15)
         )
-        entryThaiIdNumber.place(x=428, y=229, width=412, height=31)
+        entryThaiIdNumber.place(x=413, y=229, width=416, height=35)
 
         entryDathOfBirth = tk.Entry(frame,
                                     justify="left",
@@ -61,7 +61,7 @@ def mainFrame(root):
                                     foreground=config.colorBlack,
                                     font=tkFont.Font(family=config.fontDefault, size=15)
         )
-        entryDathOfBirth.place(x=428, y=284, width=412, height=31)
+        entryDathOfBirth.place(x=413, y=284, width=416, height=35)
 
         entryGender = tk.Entry(frame,
                                     justify="left",
@@ -70,7 +70,7 @@ def mainFrame(root):
                                     foreground=config.colorBlack,
                                     font=tkFont.Font(family=config.fontDefault, size=15)
         )
-        entryGender.place(x=428, y=339, width=412, height=31)
+        entryGender.place(x=413, y=339, width=416, height=35)
 
         entryPhomeNumber = tk.Entry(frame,
                                     justify="left",
@@ -79,7 +79,7 @@ def mainFrame(root):
                                     foreground=config.colorBlack,
                                     font=tkFont.Font(family=config.fontDefault, size=15)
         )
-        entryPhomeNumber.place(x=428, y=394, width=412, height=31)
+        entryPhomeNumber.place(x=413, y=394, width=416, height=35)
 
         entryEmail = tk.Entry(frame,
                                     justify="left",
@@ -88,7 +88,7 @@ def mainFrame(root):
                                     foreground=config.colorBlack,
                                     font=tkFont.Font(family=config.fontDefault, size=15)
         )
-        entryEmail.place(x=428, y=449, width=412, height=31)
+        entryEmail.place(x=413, y=449, width=416, height=35)
 
         entryAddress = tk.Entry(frame,
                                     justify="left",
@@ -97,7 +97,7 @@ def mainFrame(root):
                                     foreground=config.colorBlack,
                                     font=tkFont.Font(family=config.fontDefault, size=15)
         )
-        entryAddress.place(x=428, y=504, width=412, height=90)
+        entryAddress.place(x=413, y=504, width=416, height=90)
 
         entryHireDate = tk.Entry(frame,
                                     justify="left",
@@ -106,7 +106,7 @@ def mainFrame(root):
                                     foreground=config.colorBlack,
                                     font=tkFont.Font(family=config.fontDefault, size=15)
         )
-        entryHireDate.place(x=428, y=614, width=412, height=31)
+        entryHireDate.place(x=413, y=614, width=416, height=35)
         
         labelUserImg = tk.Label(frame, image=imgUser)
         labelUserImg.place(x=902, y=162, width=283, height=326)
