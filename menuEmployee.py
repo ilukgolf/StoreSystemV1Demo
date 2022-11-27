@@ -6,8 +6,9 @@ def mainFrame(root):
     frame = tk.Frame(root, background=config.colorBackground)
     
     def generateUI():
-        global imgFrame
+        global imgFrame, imgUser
         imgFrame = tk.PhotoImage(file="assets/pages/page_employee.png")
+        imgUser = tk.PhotoImage(file="assets/pages/unknownUser.png")
         frameBG = tk.Label(frame, image=imgFrame)
         frameBG.place(x=0, y=0, width=config.windowsWidth, height=config.windowsHeight)
         
@@ -26,85 +27,98 @@ def mainFrame(root):
         )
         btnReturn.place(x=26, y=14, width=66, height=45)
 
-        entryFirstnameTH = tk.Label(frame,
-                                    text="",
+        entryNameTH = tk.Label(frame,
+                                    text="ทดสอบ",
                                     anchor="w",
                                     relief="flat",
                                     background=config.colorLightGary,
                                     foreground=config.colorBlack,
                                     font=tkFont.Font(family=config.fontDefault, size=15)
         )
-        entryFirstnameTH.place(x=428, y=121, width=412, height=31)
+        entryNameTH.place(x=428, y=121, width=412, height=31)
 
-        entryFirstnameTH = tk.Label(frame,
-                                    text="",
+        entryNameEN = tk.Label(frame,
+                                    text="ทดสอบ",
                                     anchor="w",
                                     relief="flat",
                                     background=config.colorLightGary,
                                     foreground=config.colorBlack,
                                     font=tkFont.Font(family=config.fontDefault, size=15)
         )
-        entryFirstnameTH.place(x=428, y=121, width=412, height=31)
+        entryNameEN.place(x=428, y=174, width=412, height=31)
 
-        entryFirstnameTH = tk.Label(frame,
-                                    text="",
+        entryThaiIdNumber = tk.Label(frame,
+                                    text="ทดสอบ",
                                     anchor="w",
                                     relief="flat",
                                     background=config.colorLightGary,
                                     foreground=config.colorBlack,
                                     font=tkFont.Font(family=config.fontDefault, size=15)
         )
-        entryFirstnameTH.place(x=428, y=121, width=412, height=31)
+        entryThaiIdNumber.place(x=428, y=229, width=412, height=31)
 
-        entryFirstnameTH = tk.Label(frame,
-                                    text="",
+        entryDathOfBirth = tk.Label(frame,
+                                    text="ทดสอบ",
                                     anchor="w",
                                     relief="flat",
                                     background=config.colorLightGary,
                                     foreground=config.colorBlack,
                                     font=tkFont.Font(family=config.fontDefault, size=15)
         )
-        entryFirstnameTH.place(x=428, y=121, width=412, height=31)
+        entryDathOfBirth.place(x=428, y=284, width=412, height=31)
 
-        entryFirstnameTH = tk.Label(frame,
-                                    text="",
+        entryGender = tk.Label(frame,
+                                    text="ทดสอบ",
                                     anchor="w",
                                     relief="flat",
                                     background=config.colorLightGary,
                                     foreground=config.colorBlack,
                                     font=tkFont.Font(family=config.fontDefault, size=15)
         )
-        entryFirstnameTH.place(x=428, y=121, width=412, height=31)
+        entryGender.place(x=428, y=339, width=412, height=31)
 
-        entryFirstnameTH = tk.Label(frame,
-                                    text="",
+        entryPhomeNumber = tk.Label(frame,
+                                    text="ทดสอบ",
                                     anchor="w",
                                     relief="flat",
                                     background=config.colorLightGary,
                                     foreground=config.colorBlack,
                                     font=tkFont.Font(family=config.fontDefault, size=15)
         )
-        entryFirstnameTH.place(x=428, y=121, width=412, height=31)
+        entryPhomeNumber.place(x=428, y=394, width=412, height=31)
 
-        entryFirstnameTH = tk.Label(frame,
-                                    text="",
+        entryEmail = tk.Label(frame,
+                                    text="ทดสอบ",
                                     anchor="w",
                                     relief="flat",
                                     background=config.colorLightGary,
                                     foreground=config.colorBlack,
                                     font=tkFont.Font(family=config.fontDefault, size=15)
         )
-        entryFirstnameTH.place(x=428, y=121, width=412, height=31)
+        entryEmail.place(x=428, y=449, width=412, height=31)
 
-        entryFirstnameTH = tk.Label(frame,
-                                    text="",
+        entryAddress = tk.Label(frame,
+                                    text="ทดสอบ",
+                                    anchor="nw",
+                                    relief="flat",
+                                    background=config.colorLightGary,
+                                    foreground=config.colorBlack,
+                                    font=tkFont.Font(family=config.fontDefault, size=15)
+        )
+        entryAddress.place(x=428, y=504, width=412, height=90)
+
+        entryHireDate = tk.Label(frame,
+                                    text="ทดสอบ",
                                     anchor="w",
                                     relief="flat",
                                     background=config.colorLightGary,
                                     foreground=config.colorBlack,
                                     font=tkFont.Font(family=config.fontDefault, size=15)
         )
-        entryFirstnameTH.place(x=428, y=121, width=412, height=31)
+        entryHireDate.place(x=428, y=614, width=412, height=31)
+        
+        labelUserImg = tk.Label(frame, image=imgUser)
+        labelUserImg.place(x=902, y=162, width=283, height=326)
 
     generateUI()
     return frame
