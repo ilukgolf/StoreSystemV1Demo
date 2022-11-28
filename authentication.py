@@ -104,8 +104,10 @@ def mainFrame(root):
                 if loginStatus == 1:
                     alert.login_success(userInfo['username'])
                     frame.destroy()
+                    print("- Frame: Authentication")
                     menu_frame = menu.mainFrame(root, userInfo)
                     menu_frame.place(x=0, y=0, width=config.windowsWidth, height=config.windowsHeight)
+                    print("+ Frame: Menu")
                 elif loginStatus == 2:
                     # TODO: Call function to change password
                     pass
