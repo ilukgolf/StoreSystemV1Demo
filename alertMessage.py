@@ -1,5 +1,8 @@
 from tkinter import messagebox as msg
 
+def addEmployee():
+    msg.showwarning("เพิ่มข้อมูลพนักงานไม่สำเร็จ", "{:<35}".format("กรุณากรอกข้อมูลให้ครบถ้วน"))
+
 def databaseError(errno, _db):
     msg.showerror('ฐานข้อมูลผิดพลาด', 'MySQL Error Code: {:<35}\n\n{}'.format(errno, mySQL_error_code(errno, _db)))
     
