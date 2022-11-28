@@ -1,5 +1,6 @@
 import tkinter as tk
 import config, alertMessage as alert
+import tkinter.font as tkFont
 
 def mainWindow():
     
@@ -22,11 +23,14 @@ def mainWindow():
             root.destroy()
         
     def authenticationFunction():   # TODO: EDIT TO authentication (now use to generate ui)
-        import menuEmployeeAdd as functionFrame
+        import authentication as functionFrame
         frame = functionFrame.mainFrame(root)
         frame.place(x=0, y=0, width=config.windowsWidth, height=config.windowsHeight)
+        print("+ Frame: Authentication")
         
     root = generateWindow()
+    root.option_add("*Font", tkFont.Font(family=config.fontDefault, size=12))
+    root.option_add("*OptionMenu", tkFont.Font(family=config.fontDefault, size=12))
     # checkSqlConnection()
     authenticationFunction()
     root.mainloop()
