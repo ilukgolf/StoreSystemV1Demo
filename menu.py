@@ -94,7 +94,7 @@ def mainFrame(root, userInfo):
         )
         entryfd.place(x=900, y=108, width=338, height=35)
 
-        btnName = tk.Button(frame,
+        btnSearch = tk.Button(frame,
                             text="ค้นหา",
                             cursor="hand2",
                             justify="center",
@@ -107,9 +107,9 @@ def mainFrame(root, userInfo):
                             activeforeground=config.colorWhite,
                             font=tkFont.Font(family=config.fontDefault, size=13)
         )
-        btnName.place(x=1148, y=162, width=90, height=36)
+        btnSearch.place(x=1148, y=162, width=90, height=36)
         
-        btnName2 = tk.Button(frame,
+        btnAdd = tk.Button(frame,
                             text="เพิ่ม",
                             cursor="hand2",
                             justify="center",
@@ -120,14 +120,25 @@ def mainFrame(root, userInfo):
                             foreground=config.colorWhite,
                             activebackground=config.colorLightBlue,
                             activeforeground=config.colorWhite,
-                            font=tkFont.Font(family=config.fontDefault, size=13)
+                            font=tkFont.Font(family=config.fontDefault, size=13),
+                            command=lambda: btnAddClick()
         )
-        btnName2.place(x=1045, y=162, width=90, height=36)
+        btnAdd.place(x=1045, y=162, width=90, height=36)
         
     def btnQuitClick():
         import authentication
-        frame = authentication.mainFrame(root)
-        frame.place(x=0, y=0, width=config.windowsWidth, height=config.windowsHeight)
+        print("- Frame: menu")
+        frame.destroy()
+        auth_frame = authentication.mainFrame(root)
+        auth_frame.place(x=0, y=0, width=config.windowsWidth, height=config.windowsHeight)
+        print("+ Frame: Authentication")
+        
+    def btnAddClick():
+        import menuEmployeeAdd
+        print("- Frame: menu")
+        emp_frame = menuEmployeeAdd.mainFrame(root, userInfo)
+        emp_frame.place(x=0, y=0, width=config.windowsWidth, height=config.windowsHeight)
+        print("+ Frame: menuEmployeeAdd")
         
     generateUI()
     return frame
